@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="index.js"></script>
+    <title>My-Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <form>
+                <input type="text" class="result-bar" id="disp" value="" onkeydown="checkKey(event)" >   
+            </form>
+        </div>
+        <div class="keyboard">
+            <table>
+                <tr>
+                    <td><input type="button" class="operation" id="btnC" value="C" onclick="cleanDisplay()"> </td>
+                    <td><input type="button" class="operation" id="btndel" value="<" onclick="del()"> </td>
+                    <td><input type="button" class="operation" id="btn/" value="/" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="operation" id="btnX" value="*" onclick="showDisplay(this)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="number" id="btn7" value="7" onclick="showDisplay(this)" > </td>
+                    <td><input type="button" class="number" id="btn8" value="8" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn9" value="9" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="operation" id="btnMinus" value="-" onclick="showDisplay(this)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="number" id="btn4" value="4" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn5" value="5" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn6" value="6" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="operation" id="btn+" value="+" onclick="showDisplay(this)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="number" id="btn1" value="1" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn2" value="2" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn3" value="3" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="operation" id="btn_equal" value="=" onclick="calculate(this)"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="number" id="btn0" value="0" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btn00" value="00" onclick="showDisplay(this)"> </td>
+                    <td><input type="button" class="number" id="btndot" value="." onclick="showDisplay(this)"> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+   
+</body>
+</html>
