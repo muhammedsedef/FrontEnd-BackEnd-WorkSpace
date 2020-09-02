@@ -1,0 +1,117 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Comic Sans MS", cursive, sans-serif ; 
+} 
+body{
+    background: rgb(91,86,167);
+    background: linear-gradient(90deg, rgba(91,86,167,1) 17%, rgba(12,9,121,0.8101851851851851) 35%, rgba(15,116,113,0.9143518518518519) 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clock{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    border:3px solid black;
+    border-radius: 50%;
+}
+
+.clock .number{
+    --rotation_Deg: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(var(--rotation_Deg));
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+.clock .num1{--rotation_Deg: 30deg;}
+    
+.clock .num2{--rotation_Deg: 60deg;}
+
+.clock .num3{--rotation_Deg: 90deg;}
+
+.clock .num4{--rotation_Deg: 120deg;}
+
+.clock .num5{--rotation_Deg: 150deg;}
+
+.clock .num6{--rotation_Deg: 180deg;}
+
+.clock .num7{--rotation_Deg: 210deg;}
+
+.clock .num8{--rotation_Deg: 240deg;}
+
+.clock .num9{--rotation_Deg: 270deg;}
+
+.clock .num10{--rotation_Deg: 300deg;}
+
+.clock .num11{--rotation_Deg: 330deg;}
+
+.clock .num12{--rotation_Deg: 360deg;}
+
+.clock::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 12;
+}
+.hand{
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin:bottom ;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 11;
+}
+
+.hand.hour{
+    height: 35%;
+    width: 7px;
+    background-color: black;
+}
+
+.hand.minutes{
+    height: 40%;
+    width: 5px;
+    background-color: black;
+}
+
+.hand.second{
+    height: 45%;
+    width: 3px;
+    background-color: red;
+}
+
+#digitalClock{
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 60%;
+    border: 2px solid rgba(71, 117, 126, 0.81);
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    z-index: 13;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: rgba(166, 175, 79, 0.425);
+}
