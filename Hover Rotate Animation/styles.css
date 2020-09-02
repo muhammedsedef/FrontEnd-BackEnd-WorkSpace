@@ -1,0 +1,63 @@
+.main{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.rotate{
+    width: 500px;
+    height: 500px;
+    border: 20px solid blue;
+    border-right-color : yellow;
+    border-bottom-color : yellow;
+    border-radius: 50%;
+    transition: transform 1.1s;
+}
+
+.image{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+.content{
+    position: absolute;
+    top:20px;
+    left:20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    color:white;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    
+}
+.main:hover{
+    cursor: pointer;
+}
+.main:hover .content{
+    opacity: 1;
+    
+}
+.main:hover .rotate{
+    transform: rotate(180deg);
+}
+
