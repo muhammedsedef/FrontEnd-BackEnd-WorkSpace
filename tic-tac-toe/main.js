@@ -12,7 +12,7 @@ $(function () {
                $(this).html("O");
            }
            check++;
-           if(checkWinner()!= ""){
+           if(checkWinner()!= "" && checkWinner() != -1){
                 if(checkWinner() == "X"){
                     $("body").append("<div class ='result'> Winner is X </div>");
                     $("body").append("<button onclick='location.reload()'>Play Again </button>");
@@ -24,8 +24,6 @@ $(function () {
                     is_game_over = true;
                 }
            }
-           
-           
        }
     });
     function checkWinner(){
@@ -65,6 +63,9 @@ $(function () {
         }
         else if(bx3 == bx5 && bx5 == bx7){
             return bx7;
+        }
+        else{
+            return -1;
         }
         
     }
