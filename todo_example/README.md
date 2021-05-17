@@ -1,6 +1,7 @@
 # TODOLIST EXAMPLE 
 
-## Javascript ile To Do List
+## TODOLIST WITH JS 
 
+In this project I used HMTL-CSS-JS
 
 ![todolist](https://github.com/muhammedsedef/FrontEnd-BackEnd-WorkSpace/blob/master/todo_example/figures/todolist.gif)
